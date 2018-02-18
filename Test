@@ -1,0 +1,27 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+	
+		Start:
+		Console.WriteLine("Hello, What's your name ?");
+		var name = Console.ReadLine();
+		
+		Console.WriteLine("Hello, " + name + (" ,how old are you?"));
+		int age = Convert.ToInt32(Console.ReadLine()); 
+		
+		
+		if (age >= 18)
+		  {
+			Console.WriteLine("Jump right In , your wellcome! ");
+		 	Console.WriteLine("Lets do some Math " + name);
+		  }
+		 else 
+		  {
+			Console.WriteLine("Come back later, "+ name );
+		  }
+		  goto Start;		
+	}	
+}
