@@ -14,7 +14,21 @@ class MainClass {
 		
 		if (answer == num01 * num02 )
 		{
-			Console.WriteLine("Well Done! Your answer is correct!");
+		  int answerIndex = numberGenerator.Next(1,4);
+		  
+		  switch (answerIndex)
+		  {
+		    case 1:
+		    Console.WriteLine("Well Done! Your answer is correct!");
+		    break;
+		    case 2:
+		    Console.WriteLine("Well Done! ");
+		    break;
+		    default :
+		    Console.WriteLine("Your answer is correct!");
+		    break;
+		  }
+			
 		}
 		else 
 		{
